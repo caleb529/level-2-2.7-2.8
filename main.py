@@ -2,34 +2,40 @@
 #importing pi from Python standard library
 from math import pi 
 
-def start(circle,rectangle,square,triangle):
+def start():
   print("welcome to the caluter")
-  print("choose a shape to calculate")
+  input("choose a shape to calculate" )
+  
+  if input == circle
 
+  elif input =="square"
 
-  #calutaions
+  elif input =="rectangle"
 
-  # circle calcutation
+  else input =="triangle"
 
-  #Getting the value of radius from user 
-  radius  = float(input('Enter radius of circle: '))
+   #calutaions
+  def circle():
+    # circle calcutation
+    #Getting the value of radius from user 
+    radius  = float(input('Enter radius of circle: '))
 
-  #Calculating the area of circle 
-  area = pi * radius * radius 
+    #Calculating the area of circle 
+    area = pi * radius * radius 
 
-  #Calculating the perimeter of the circle 
-  perimeter = 2 * radius * pi 
+    #Calculating the perimeter of the circle 
+    perimeter = 2 * radius * pi 
 
-  #Displaying the area and perimeter of cirlce to screen 
-  print('The area of the circle is ', area )
-  print('The perimeter of the circle is ', perimeter )
+    #Displaying the area and perimeter of cirlce to screen 
+    print('The area of the circle is ', area )
+    print('The perimeter of the circle is ', perimeter )
 
 
   #rectangle
   # Write a Program to find the Area of a Rectangle and 
   # Perimeter of a Rectangle in Python using functions
   
-  def AreaOfRectangle(width, height):
+  def Rectangle(width, height):
   
       # calculate the area
       Area = width * height
@@ -47,31 +53,35 @@ def start(circle,rectangle,square,triangle):
 
 
 
-  #square
-  s=int(input("square side : "))
-  area=s*s
-  perimeter=4*s
-  print("Area of Rectangle : ",area)
-  print("Perimeter of Rectangle : ",perimeter)
+  
+  def square():
+    #square
+    s=int(input("square side : "))
+    area=s*s
+    perimeter=4*s
+    print("Area of Rectangle : ",area)
+    print("Perimeter of Rectangle : ",perimeter)
 
 
-  #triangle
-  # Python Program to find the area of triangle
+  def triangle():
+    #triangle
+    # Python Program to find the area of triangle
 
-  a = 5
-  b = 6
-  c = 7
+    a = 5
+    b = 6
+    c = 7
 
 
-  a = float(input('Enter first side: '))
-  b = float(input('Enter second side: '))
-  c = float(input('Enter third side: '))
+    a = float(input('Enter first side: '))
+    b = float(input('Enter second side: '))
+    c = float(input('Enter third side: '))
 
-  # calculate the semi-perimeter
-  s = (a + b + c) / 2
+    # calculate the semi-perimeter
+    s = (a + b + c) / 2
 
-  # calculate the area
-  area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
-  print('The area of the triangle is %0.2f' %area)
+    # calculate the area
+    area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+    print('The area of the triangle is %0.2f' %area)
 
+#start(triangle,square,rectangle,circle)
 start()
